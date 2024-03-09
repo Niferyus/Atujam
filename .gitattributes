@@ -67,3 +67,28 @@
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.tif filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Bu dosya, Git'te varlıklarınızın nasıl işleneceğini tanımlar.
+
+# Sahne dosyaları (scene files)
+*.unity merge=union
+
+# Prefab dosyaları (prefab files)
+*.prefab merge=union
+
+# Doku dosyaları (texture files)
+*.png merge=binary
+*.jpg merge=binary
+*.tga merge=binary
+
+# Ses dosyaları (audio files)
+*.wav merge=binary
+*.mp3 merge=binary
+
+# Script dosyaları (script files)
+*.cs merge=text
+*.js merge=text
+
+# Diğer metin dosyaları (other text files)
+*.txt merge=text
+*.xml merge=text
